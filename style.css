@@ -69,9 +69,11 @@ section .header-icons {
     font-size: 1.5rem;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.781);   
+    text-decoration: underline;
+    text
 }
 
-section a img {
+section a img{
     margin-right: 1rem;
 }
 .icon-text:hover{
@@ -81,6 +83,18 @@ section a img {
     color: #ff5200;
 }
 
+
+
+/* Main container stayling */
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main h2{
+    display: flex;
+    justify-content:flex-start;
+    font-size: 1.7rem;
+}
 
 
 
