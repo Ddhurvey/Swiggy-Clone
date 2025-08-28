@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    display: flex;
+    width: 95%;
+    height: 8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.swiggy-logo-img {
+    scale: 0.9;
+    transition: all 0.7s ease;
+}
+
+.swiggy-logo-img:hover {
+    scale: 1;
+}
+
+section.header-logo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    white-space: nowrap;
+    margin-right: 3rem;
+}   
+
+.nav .icon-text{
+    text-decoration: none;
+}
+
+section .header-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-size {
+    width: 1.7rem;
+    height: auto;
+}
+
+.icon-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.781);
+}
+.icon-other{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.781);   
+    text-decoration: underline;
+    text
+}
+
+section a img{
+    margin-right: 1rem;
+}
+.icon-text:hover{
+    color: #ff5200;
+}
+.icon-other:hover{
+    color: #ff5200;
+}
+
+
+
+/* Main container stayling */
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main h2{
+    display: flex;
+    justify-content:flex-start;
+    font-size: 1.9rem;
+    font-weight: 900;
+    color: #161b20;
+}
+
+
+
+
+
+
+
+/* Meadia Query */
+@media (max-width:768px) {
+
+    /* meadia query for header */
+    nav{
+        width: 100%;
+        
+    }
+    .nav {
+        gap: 0;
+        margin-right: 1rem;
+    }
+
+    section a img {
+        margin-right: 0;
+    }
+    .icon-text{
+        margin-left: 0.5rem;
+    }
+    section{
+        gap: 0;
+    }
+}
