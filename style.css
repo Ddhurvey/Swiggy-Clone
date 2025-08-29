@@ -115,6 +115,82 @@ main div section a{
     display: block;
     white-space: nowrap;
 }
+/* Food items section */
+.food-card-section{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(10,auto);
+    gap: 2rem;
+}
+.food-card{
+    /* border: 1px solid gray; */
+    height: auto;
+    width:29rem;
+    display: flex;
+    justify-content: center;
+    transition: scale .1s ease;
+}
+.food-card:hover{
+    scale: 0.95;
+}
+.food-item{
+    margin: 1rem;
+}
+
+.food-item img{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    height:18rem;
+    width: 25rem;
+    image-rendering:crisp-edges;
+    border-radius:20px;
+
+}
+
+.food-informations{
+    padding-inline:1.5rem;
+}
+.food-informations h3{
+    font-size: 1.8rem;
+}
+.rating img{
+    display: inline;
+    height: 1.5rem;
+    width: auto;
+}
+.rating{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 700;
+    align-items: center;
+}
+.food-type{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+.location p{
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Meadia Query */
 @media (max-width:768px) {
@@ -133,7 +209,7 @@ main div section a{
         margin-right: 0;
     }
     .icon-text{
-        margin-left:1.5rem;
+        margin: left 1.5em;
     }
     section{
         gap: 0;
