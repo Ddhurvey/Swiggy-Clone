@@ -44,9 +44,9 @@ section.header-logo {
     gap: 2rem;
     white-space: nowrap;
     margin-right: 3rem;
-}   
+}
 
-.nav .icon-text{
+.nav .icon-text {
     text-decoration: none;
 }
 
@@ -65,112 +65,128 @@ section .header-icons {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.781);
 }
-.icon-other{
+
+.icon-other {
     font-size: 1.5rem;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.781);   
+    color: rgba(0, 0, 0, 0.781);
     text-decoration: underline;
-    
+
 }
 
-section a img{
+section a img {
     margin-right: 1rem;
 }
-.icon-text:hover{
+
+.icon-text:hover {
     color: #ff5200;
 }
-.icon-other:hover{
+
+.icon-other:hover {
     color: #ff5200;
 }
 
 
 
 /* Main container stayling */
-main{
+main {
     width: 90%;
     margin: 0 auto;
 }
-main h2{
+
+main h2 {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     font-size: 1.9rem;
     font-weight: 900;
     color: #161b20;
     margin-bottom: 1.6rem;
 }
-main div section{
+
+main div section {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
-main div section a{
+
+main div section a {
     text-decoration: none;
     font-size: 1.2rem;
     border: 1px solid gray;
     border-radius: 2rem;
     color: #161b20;
-    font-weight:500;
+    font-weight: 500;
     padding: .5rem;
     margin-right: 1rem;
     display: block;
     white-space: nowrap;
-}
-/* Food items section */
-.food-card-section{
-    display: grid;
     flex-wrap: wrap;
-    grid-template-columns: repeat(4,auto);
-    grid-template-rows: repeat(10,auto);
+}
+
+/* Food items section */
+.food-card-section {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, auto);
     gap: 2rem;
 }
-.food-card{
+
+.food-card {
     /* border: 1px solid gray; */
     height: auto;
-    width:29rem;
+    width: 29rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     transition: scale .1s ease;
 }
-.food-card:hover{
+
+.food-card:hover {
     scale: 0.95;
 }
-.food-item{
+
+.food-item {
     margin: 1rem;
 }
 
-.food-item img{
+.food-item img {
     display: flex;
     justify-items: center;
     justify-content: center;
-    height:18rem;
+    height: 18rem;
     width: 25rem;
-    image-rendering:crisp-edges;
-    border-radius:20px;
+    image-rendering: crisp-edges;
+    border-radius: 20px;
 
 }
 
-.food-informations{
-    padding-inline:1.5rem;
+.food-informations {
+    padding-inline: 1.5rem;
 }
-.food-informations h3{
+
+.food-informations h3 {
     font-size: 1.8rem;
 }
-.rating img{
+
+.rating img {
     display: inline;
     height: 1.5rem;
     width: auto;
 }
-.rating{
+
+.rating {
     display: flex;
     font-size: 1.2rem;
     font-weight: 700;
     align-items: center;
 }
-.food-type{
+
+.food-type {
     text-align: justify;
     font-size: 1.5rem;
 }
-.location p{
+
+.location p {
     text-align: start;
     font-size: 1.5rem;
     font-weight: 500;
@@ -196,22 +212,36 @@ main div section a{
 @media (max-width:768px) {
 
     /* meadia query for header */
-    nav{
+    nav {
         width: 100%;
-        
+
     }
+
     .nav {
         gap: 0;
         margin-right: 1rem;
     }
 
     section a img {
-        margin-right: 0;
+        margin-right: .01rem;
     }
-    .icon-text{
+
+    .icon-text {
         margin: left 1.5em;
     }
-    section{
+
+    section {
         gap: 0;
+    }
+
+    .food-card-section {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(12, auto);
+        gap: 2rem;
+    }
+    main div section a {
+        margin: 0;
     }
 }
