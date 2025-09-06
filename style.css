@@ -115,6 +115,7 @@ main div section {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    
 }
 
 main div section a {
@@ -134,9 +135,10 @@ main div section a {
 /* Food items section */
 .food-card-section {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6,1fr);
     gap: 2rem;
+
 }
 
 .food-card {
@@ -155,6 +157,7 @@ main div section a {
 
 .food-item {
     margin: 1rem;
+     
 }
 
 .food-item img {
@@ -165,7 +168,7 @@ main div section a {
     width: 25rem;
     image-rendering: crisp-edges;
     border-radius: 20px;
-
+    margin: 0 auto;
 }
 
 .food-informations {
@@ -178,8 +181,9 @@ main div section a {
 
 .rating img {
     display: inline;
-    height: 1.5rem;
+    height: 1.8rem;
     width: auto;
+    margin: 0;
 }
 
 .rating {
@@ -221,6 +225,7 @@ main div section a {
     justify-content: space-around;
     gap: 1rem;
     flex-wrap: wrap;
+    white-space: wrap;
 }
 
 .best-place {
@@ -230,10 +235,7 @@ main div section a {
     height: 5rem;
     width: 15rem;
     padding: 1rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-self: center; */
+
 }
 
 
