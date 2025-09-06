@@ -111,7 +111,7 @@ main h2 {
     margin-bottom: 1.6rem;
 }
 
-main div section {
+main .main-options{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -251,11 +251,6 @@ main div section a {
 
 
 /* Meadia Query */
-@media (max-width:425px) {
-    .city-container {
-        width: 50rem;
-    }
-}
 
 @media (max-width:768px) {
 
@@ -295,7 +290,6 @@ main div section a {
     }
 
     .city-container {
-        margin-inline: 5rem;
-        width: 60rem;
+        width:auto;
     }
 }
