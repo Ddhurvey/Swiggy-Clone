@@ -10,17 +10,31 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 nav {
     display: flex;
     width: 95%;
-    height: 8rem;
     margin: 0 auto;
+    height: 8rem;
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+}
 
+.box-shaddow {
+    height: 0.1px;
+    box-shadow: 0px 1px 10px gray;
+    width: 100%;
+    background-color: black;
+}
+
+.new {
+    color: orange;
+    font-size: 1rem;
 }
 
 .swiggy-logo-img {
@@ -192,9 +206,41 @@ main div section a {
     font-weight: 500;
 }
 
+/* Inside the city container */
+.city-container {
+    margin-inline: 5rem;
+}
 
+.best-place-Cities-header {
+    height: max-content;
+}
 
+.best-place-Cities-header h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    opacity: 0.9;
+}
 
+.best-place-cities-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.best-place {
+    font-size: 1.5rem;
+    border: 1px solid gray;
+    border-radius: .9rem;
+    height: 5rem;
+    width: 15rem;
+    padding: 1rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center; */
+}
 
 
 
@@ -209,6 +255,12 @@ main div section a {
 
 
 /* Meadia Query */
+@media (max-width:425px) {
+    .city-container {
+        width: 50rem;
+    }
+}
+
 @media (max-width:768px) {
 
     /* meadia query for header */
@@ -241,7 +293,13 @@ main div section a {
         grid-template-rows: repeat(12, auto);
         gap: 2rem;
     }
+
     main div section a {
         margin: 0;
+    }
+
+    .city-container {
+        margin-inline: 5rem;
+        width: 60rem;
     }
 }
