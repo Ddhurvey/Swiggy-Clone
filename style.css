@@ -199,7 +199,7 @@ main div section a {
 }
 
 .location p {
-    text-align: start;
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -226,6 +226,7 @@ main div section a {
     gap: 1rem;
     flex-wrap: wrap;
     white-space: wrap;
+
 }
 
 .best-place {
@@ -235,7 +236,7 @@ main div section a {
     height: 5rem;
     width: 15rem;
     padding: 1rem;
-
+    text-align: center;
 }
 
 
@@ -290,6 +291,11 @@ main div section a {
     }
 
     .city-container {
-        width:auto;
+        width:60rem;
+    }
+}
+@media (max-width:425px) {
+    .city-container {
+        width:50rem;
     }
 }
