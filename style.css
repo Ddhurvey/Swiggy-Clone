@@ -255,6 +255,7 @@ hr {
 footer {
     margin: 0 auto;
     width: 95vw;
+    background-color: #f0f0f5;
 }
 
 .footer-container {
@@ -359,6 +360,9 @@ footer h3 {
 
     .second-footer {
         gap: 3rem;
+    }
+    footer a{
+        font-size: 1;
     }
 }
 
