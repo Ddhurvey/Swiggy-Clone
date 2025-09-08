@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -98,7 +98,7 @@ section a img {
 
 /* Main container stayling */
 main {
-    width: 90%;
+    width: 98vw;
     margin: 0 auto;
 }
 
@@ -138,6 +138,8 @@ main div section a {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6,1fr);
     gap: 2rem;
+    margin: 0 auto;
+    justify-content: space-evenly;
 
 }
 
@@ -199,7 +201,7 @@ main div section a {
 }
 
 .location p {
-    text-align: center;
+    text-align: start;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -222,7 +224,7 @@ main div section a {
 .best-place-cities-main {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 1rem;
     flex-wrap: wrap;
     white-space: wrap;
@@ -233,8 +235,8 @@ main div section a {
     font-size: 1.5rem;
     border: 1px solid gray;
     border-radius: .9rem;
-    height: 5rem;
-    width: 15rem;
+    height:auto;
+    width: 16rem;
     padding: 1rem;
     text-align: center;
 }
